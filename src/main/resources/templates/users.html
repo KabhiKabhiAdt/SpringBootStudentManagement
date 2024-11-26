@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List Users</title>
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			background: linear-gradient(to right, #6a11cb, #2575fc);
+			color: #fff;
+			font-family: 'Arial', sans-serif;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.container {
+			background: rgba(255, 255, 255, 0.1);
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			width: 100%;
+			max-width: 800px;
+		}
+		h1 {
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		table {
+			background: rgba(255, 255, 255, 0.9);
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		th, td {
+			text-align: center;
+			vertical-align: middle;
+		}
+		.thead-dark th {
+			background: #2575fc;
+			color: white;
+		}
+		.btn-logout {
+			background: #2575fc;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 15px;
+			transition: background 0.3s;
+		}
+		.btn-logout:hover {
+			background: #6a11cb;
+		}
+		.welcome {
+			margin-bottom: 20px;
+		}
+		.welcome b {
+			color: #f1c40f;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="text-end mb-4">
+		<form th:action="@{/logout}" method="post" class="d-inline">
+			<p class="welcome">
+				Welcome, <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+			</p>
+			<button type="submit" class="btn btn-logout">Sign Out</button>
+		</form>
+	</div>
+	<div>
+		<h1 class="text-center">List of Users</h1>
+	</div>
+	<div class="table-responsive mt-4">
+		<table class="table table-striped table-bordered">
+			<thead class="thead-dark">
+			<tr>
+				<th>User ID</th>
+				<th>E-mail</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr th:each="user: ${listUsers}">
+				<td th:text="${user.id}">User ID</td>
+				<td th:text="${user.email}">E-mail</td>
+				<td th:text="${user.firstName}">First Name</td>
+				<td th:text="${user.lastName}">Last Name</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

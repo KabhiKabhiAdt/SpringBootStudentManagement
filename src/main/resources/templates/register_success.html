@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Success</title>
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			background: linear-gradient(to right, #6a11cb, #2575fc);
+			color: #fff;
+			font-family: 'Arial', sans-serif;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container {
+			background: rgba(255, 255, 255, 0.1);
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			text-align: center;
+			max-width: 500px;
+			width: 100%;
+		}
+		h3 {
+			font-size: 1.8rem;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		h4 a {
+			color: #f1c40f;
+			text-decoration: none;
+			font-size: 1.2rem;
+			transition: color 0.3s;
+		}
+		h4 a:hover {
+			color: #fff;
+		}
+		.success-icon {
+			font-size: 3rem;
+			color: #28a745;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h3>Registration Successful!</h3>
+	<h4><a th:href="@{/login}">Click here to Login</a></h4>
+</div>
+</body>
+</html>
