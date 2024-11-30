@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build Application') {
             steps {
-                sh '/usr/local/maven/bin/mvn spring-boot:run'
+                sh '/usr/local/maven/bin/mvn clean package'
             }
         }
         stage('Deploy to EC2') {
