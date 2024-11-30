@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build Application') {
             steps {
-                sh 'mvn clean package'
+                sh '/usr/local/maven/bin/mvn clean package'
             }
         }
         stage('Deploy to EC2') {
