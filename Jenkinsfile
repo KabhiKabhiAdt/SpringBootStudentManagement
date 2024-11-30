@@ -1,13 +1,15 @@
 pipeline {
     agent any
     environment {
-        EC2_IP = '172.31.45.157'
-        SSH_KEY = 'hnrs.pem'
+        EC2_IP = '34.229.22.245'         // Replace with your EC2 instance's IP
+        SSH_KEY = 'hnrs.pem'             // Replace with your private key for SCP/SSH
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'git@github.com:KabhiKabhiAdt/SpringBootStudentManagement.git'
+                git branch: 'main', 
+                    url: 'https://<username>@github.com/KabhiKabhiAdt/SpringBootStudentManagement.git',
+                    credentialsId: 'GithubAT' // Replace with the ID of your Jenkins credentials
             }
         }
         stage('Build Application') {
