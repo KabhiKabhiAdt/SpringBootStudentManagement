@@ -1,7 +1,7 @@
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/UserRepository.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/CustomUserDetails.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/SpringBootRegistrationLoginApplication.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/WebSecurityConfig.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/User.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/CustomUserDetailsService.java
-/Users/aditi/Downloads/spring-boot-registration-login-main/src/main/java/com/aditiSpringProject/AppController.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/AppController.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/CustomUserDetailsService.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/UserRepository.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/SpringBootRegistrationLoginApplication.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/WebSecurityConfig.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/CustomUserDetails.java
+/Users/aditi/Downloads/spring-boot-sm/src/main/java/com/aditispringproject/User.java

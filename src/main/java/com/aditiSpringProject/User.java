@@ -1,4 +1,4 @@
-package com.aditiSpringProject;
+package com.aditispringproject;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

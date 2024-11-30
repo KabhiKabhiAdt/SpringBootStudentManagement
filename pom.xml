@@ -8,7 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.codejava</groupId>
+	<groupId>com.aditispringproject</groupId>
 	<artifactId>SpringBootRegistrationLogin</artifactId>
 	<version>1.0</version>
 	<name>SpringBootRegistrationLogin</name>
@@ -76,7 +76,7 @@
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator-core</artifactId>
-		</dependency>		
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -1,4 +1,4 @@
-package com.aditiSpringProject;
+package com.aditispringproject;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

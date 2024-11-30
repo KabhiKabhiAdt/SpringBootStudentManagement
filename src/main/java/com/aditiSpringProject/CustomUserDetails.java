@@ -1,4 +1,4 @@
-package com.aditiSpringProject;
+package com.aditispringproject;
 
 import java.util.Collection;
 

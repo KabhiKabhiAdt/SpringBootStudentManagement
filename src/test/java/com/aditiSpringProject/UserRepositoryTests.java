@@ -1,4 +1,4 @@
-package com.aditiSpringProject;
+package com.aditispringproject;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
