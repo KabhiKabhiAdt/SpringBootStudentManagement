@@ -1,7 +1,0 @@
-com/aditispringproject/User.class
-com/aditispringproject/WebSecurityConfig.class
-com/aditispringproject/UserRepository.class
-com/aditispringproject/CustomUserDetails.class
-com/aditispringproject/AppController.class
-com/aditispringproject/CustomUserDetailsService.class
-com/aditispringproject/SpringBootRegistrationLoginApplication.class
