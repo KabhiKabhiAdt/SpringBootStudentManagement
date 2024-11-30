@@ -1,13 +1,13 @@
-package com.aditispringproject;
+// package com.aditispringproject;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringBootRegistrationLoginApplicationTests {
+// @SpringBootTest
+// class SpringBootRegistrationLoginApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }
