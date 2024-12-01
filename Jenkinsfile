@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        EC2_IP = '34.229.22.245'         // Replace with your EC2 instance's IP
-        SSH_KEY = '/usr/local/hnrs.pem'             // Replace with your private key for SCP/SSH
+        EC2_IP = '34.229.22.245'        
+        SSH_KEY = '/usr/local/hnrs.pem'            
     }
     stages {
         stage('Clone Repository') {
