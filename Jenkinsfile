@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        EC2_IP = '34.229.22.245'        
+        EC2_IP = '98.83.161.100'        
         SSH_KEY = '/usr/local/hnrs.pem'            
     }
     stages {
@@ -9,7 +9,7 @@ pipeline {
             steps {
                 git branch: 'main', 
                     url: 'https://github.com/KabhiKabhiAdt/SpringBootStudentManagement.git',
-                    credentialsId: 'GithubAT' // Replace with the ID of your Jenkins credentials
+                    credentialsId: 'GithubAT' 
             }
         }
         stage('Build Application') {
