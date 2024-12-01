@@ -8,7 +8,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main', 
-                    url: 'https://<username>@github.com/KabhiKabhiAdt/SpringBootStudentManagement.git',
+                    url: 'https://github.com/KabhiKabhiAdt/SpringBootStudentManagement.git',
                     credentialsId: 'GithubAT' // Replace with the ID of your Jenkins credentials
             }
         }
