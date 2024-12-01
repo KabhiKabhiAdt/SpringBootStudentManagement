@@ -20,8 +20,8 @@ pipeline {
         stage('Deploy to EC2') {
             steps {
                 sh """
-                scp -i ${SSH_KEY} target/SpringBootRegistrationLogin-1.0.jar ubuntu@${EC2_IP}:/home/ubuntu/
-                ssh -i ${SSH_KEY} ubuntu@${EC2_IP} "nohup java -jar /home/ubuntu/SpringBootRegistrationLogin-1.0.jar > /home/ubuntu/SpringBootRegistrationLogin-1.0.log 2>&1 &"
+                scp -o StrictHostKeyChecking=no -i ${SSH_KEY} target/SpringBootRegistrationLogin-1.0.jar ubuntu@${EC2_IP}:/home/ubuntu/
+                ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ubuntu@${EC2_IP} "nohup java -jar /home/ubuntu/SpringBootRegistrationLogin-1.0.jar > /home/ubuntu/SpringBootRegistrationLogin-1.0.log 2>&1 &"
                 """
             }
         }
